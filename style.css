@@ -1,5 +1,9 @@
 body {
-    background-color: lightgray;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease;
 }
 
 p {
@@ -10,21 +14,57 @@ p {
     border: 2px solid black;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
 }
 
-#kotak {
+.wrapper-kotak {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.box-welcome {
     width: 300px;
     height: 150px;
-    border: 1px solid black;
-    background-color: white;
+    background-color: #ffcc00;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid #000;
 }
 
 @media (max-width: 767px) {
-    #kotak {
+    .box-welcome {
         background-color: green;
         font-size: 18px;
+        color: white;
     }
+}
+
+.studi-kasus {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#btnUbah {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#pesanSukses {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
 }
