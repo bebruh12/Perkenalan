@@ -14,7 +14,7 @@ console.log("Hasil perkalian (5, 6) = " + perkalian(5, 6));
 
 const kotakWelcome = document.getElementById("kotak-welcome");
 if (kotakWelcome) {
-    kotakWelcome.textContent = "Halo Dunia";
+    kotakWelcome.textContent = "Halooo";
 }
 
 const btnUbah = document.getElementById("btnUbah");
